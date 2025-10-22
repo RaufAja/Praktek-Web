@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Form</title>
+</head>
+<body style="background-image: url(../assets/img/pc.jpg);"></body>
+    <h1>Form</h1>
+        <p>
+          <a href="../index.html" title="Go to Home" style="color:red">Home</a> |
+          <a href="contact.html" title="Go to Contact" style="color:green">Contact</a> |
+          <a href="about.html" title="Go to About" style="color:deeppink;">About</a> |
+          <a href="download.html" style="color:white;background-color: orange;">Download</a> |
+          <a href="form.html"  title="Go to Form" style="color:rgb(240, 236, 5);">Form</a> |
+          <a href="semantik.html" title="Go to semantik" style="color: aqua;">Semantik</a>
+        </p>
+        <form action="login.php" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <p>
+                    <label>Username:</label>
+                    <input type="text" name="username" placeholder="username..." />
+                </p>
+                <p>
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="password..."/>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="remember" value="remember /">Remember Me</label>
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Login" />
+                </p>
+            </fieldset>
+        </form>
+
+</html>
