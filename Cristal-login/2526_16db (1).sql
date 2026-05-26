@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2026 at 02:13 AM
+-- Generation Time: May 26, 2026 at 02:35 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -30,16 +30,23 @@ SET time_zone = "+00:00";
 CREATE TABLE `user-cristal` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `nama_lengkap` varchar(100) NOT NULL,
+  `kelas` varchar(50) NOT NULL,
+  `jabatan` varchar(50) NOT NULL,
+  `jenis_kelamin` varchar(20) NOT NULL,
+  `alamat` text NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user-cristal`
 --
 
-INSERT INTO `user-cristal` (`id`, `username`, `password`) VALUES
-(17, 'admin', '482c811da5d5b4bc6d497ffa98491e38'),
-(18, '2526_16', '25d55ad283aa400af464c76d713c07ad');
+INSERT INTO `user-cristal` (`id`, `username`, `nama_lengkap`, `kelas`, `jabatan`, `jenis_kelamin`, `alamat`, `password`, `role`) VALUES
+(1, 'Rauf', 'Rauf Putra Gunawan', 'XI TJKT 2', 'Anggota Baru', 'Laki-laki', 'Bandung\r\n', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
+(21, 'awan', 'Awan aja', 'XI TJKT 2', 'Pengurus', 'Laki-laki', 'bandung', '202cb962ac59075b964b07152d234b70', 'user'),
+(23, 'admin2', 'Budi', 'XI TJKT 2', 'Wakil Ketua', 'Laki-laki', 'Indonesia', '202cb962ac59075b964b07152d234b70', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -59,7 +66,7 @@ ALTER TABLE `user-cristal`
 -- AUTO_INCREMENT for table `user-cristal`
 --
 ALTER TABLE `user-cristal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
